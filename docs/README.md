@@ -49,7 +49,7 @@ The following scripts will be specific to the game itself:
 
 **Day 1**: Setup node modules, run webpack, and install `sound.js` and `easel.js`.  Create `webpack.config.js` and `package.json`.  Write a basic entry file and the skeleton of all 4 scripts outlined above. Get an audio file from `sound.js` running on the site.
 
-**Day 2**: Learn Easel. Create the arrow/bomb object to be constructed by the board and be able to render them. Render the structure of the entire screen (main board and sidebars).
+**Day 2**: Learn `easel.js`. Create the arrow/bomb object to be constructed by the board and be able to render them. Render the structure of the entire screen (main board and sidebars).
 
 **Day 3**: Create the scoring logic for the arrows. Implement scrolling function for the board, generation of arrows based on time elapsed, and mods. Set win/lose conditions for the lifebar.
 
