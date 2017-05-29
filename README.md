@@ -26,7 +26,7 @@ This will be a single-page app with a gameplay screen and two sidebars.
 
 The main gameplay screen will have the outline of arrows at the top with a board of incoming arrows that scrolls continuously upwards.
 
-On the right is a sidebar that will have buttons at the top to start, pause, and reset the game depending on the current context. Below will be sliders to mod current gameplay such as bomb frequency and arrow speed. Furthest down will be a dropdown of starting difficulties to choose from and an audio mute button.
+On the right is a sidebar that will have buttons at the top to start, pause, and reset the game depending on the current context. Below will be select inputs (sliders if time permits) to modify current gameplay such as bomb frequency and arrow speed. Furthest down will be a dropdown of starting difficulties to choose from and an audio mute button.
 
 On the left is a score that increments upon successful presses and a life bar.
 
