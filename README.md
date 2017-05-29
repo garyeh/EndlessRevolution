@@ -35,9 +35,9 @@ On the left is a score that increments upon successful presses and a life bar.
 ### Architecture and Technologies
 
 This project will use the following technologies:
--Vanilla JavaScript and jQuery for game logic
--HTML5 Canvas and Easel for DOM manipulation and rendering
--`audio.js` for music playback
+* Vanilla JavaScript and jQuery for game logic
+* HTML5 Canvas and Easel for DOM manipulation and rendering
+* `audio.js` for music playback
 
 The following scripts will be specific to the game itself:
 `game.js`: This will handle setting/resetting/pausing game state, rendering to the DOM, and making the appropriate calls to `sound.js`. It will also contain an instance of the board.
