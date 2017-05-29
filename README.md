@@ -2,7 +2,7 @@
 
 ### Background
 
-Endless Revolution is an implementation of the popular 4-arrow rhythm game Dance Dance Revolution where players must press corresponding arrow keys as they scroll past a static outline of their respective shapes. The twist is that the gameplay doesn't end until the user misses too many consecutive arrows.
+Endless Revolution is an implementation of the popular 4-arrow rhythm game Dance Dance Revolution where players must press corresponding arrow keys as they scroll past a static outline of their respective shapes. The twist is that the gameplay doesn't end until the user misses too many consecutive arrows and causes life points to reach 0.
 
 ### Functionality & MVP
 
@@ -28,7 +28,7 @@ The main gameplay screen will have the outline of arrows at the top with a board
 
 On the right is a sidebar that will have buttons at the top to start, pause, and reset the game depending on the current context. Below will be sliders to mod current gameplay such as bomb frequency and arrow speed. Furthest down will be a dropdown of starting difficulties to choose from and an audio mute button.
 
-On the left is a score that increments upon successful presses and a life bar that ends the game when goes down to 0.
+On the left is a score that increments upon successful presses and a life bar.
 
 ![wireframes](wireframe.png)
 
