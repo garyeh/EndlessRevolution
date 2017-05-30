@@ -37,20 +37,19 @@ On the left is a score that increments upon successful presses and a life bar.
 This project will use the following technologies:
 * Vanilla JavaScript and jQuery for game logic
 * HTML5 Canvas and `easel.js` for DOM manipulation and rendering
-* `audio.js` for music playback
 
 The following scripts will be specific to the game itself:
-`board.js`: This will handle the random creation of arrows/bombs with `easel.js`, store them in an array, and render them to the DOM. It will make calls to `sound.js` for music playback based on game state (pause/play/mute). It will also keep an instance of the life status and score.
+`board.js`: This will handle the random creation of arrows/bombs with `easel.js`, store them in an array, and render them to the DOM. It will make calls to the audio element for music playback based on game state (pause/play/mute). It will also keep an instance of the life status and score.
 `arrow.js`: This will have an identity as either an arrow or bomb and a direction assignment + sprite.
 `logic.js`: This will handle the scoring logic based on the timing of the arrows. It will be responsible for adding points to the overall score when an arrow gets destroyed.
 
 ### Implementation Timeline
 
-**Day 1**: Setup node modules, run webpack, and install `sound.js` and `easel.js`.  Create `webpack.config.js` and `package.json`.  Write a basic entry file and the skeleton of all 4 scripts outlined above. Get an audio file from `sound.js` running on the site and an arrow from `easel.js` on the site.
+**Day 1**: Setup node modules, run webpack, and install `easel.js`.  Create `webpack.config.js` and `package.json`.  Write a basic entry file and the skeleton of all 4 scripts outlined above. Get an audio file from running on the site and an arrow from `easel.js` on the site.
 
 Goals:
 - [ ] Get a green bundle with webpack
-- [ ] Learn `sound.js` and be able to playback audio
+- [ ] Be able to playback audio
 - [ ] Learn `easel.js` and be able to render an arrow
 
 **Day 2**: Continue learning `easel.js`. Create the arrow/bomb object to be constructed by the board and be able to render them. Render the structure of the entire screen (main board and sidebars).  Implement random arrow generation/destruction and movement.
