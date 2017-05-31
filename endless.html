@@ -1,17 +1,26 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>Endless Revolution</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="icon" href="assets/images/right.gif">
     <link rel="stylesheet" type="text/css" href="assets/css/endless.css">
+    <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+    <script type="application/javascript" src="./lib/bundle.js"></script>
   </head>
   <body>
-    <div>
+    <audio id="song" autoplay loop src="assets/songs/paranoia.mp3"></audio>
+    <div class="screen">
+      <div class="left-bar">
+        <span>Scoreboard</span>
+        <span>Lifebar</span>
+      </div>
 
-      <canvas></canvas>
-      <script src="./lib/bundle.js"></script>
+      <div class="board">
+        <canvas id="canvas" height="700" width="500"></canvas>
+      </div>
 
+      <div class="controls">
+        <span>Mute</span>
+      </div>
     </div>
   </body>
 </html>

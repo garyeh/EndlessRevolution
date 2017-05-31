@@ -2,6 +2,23 @@ body {
   margin: 0;
 }
 
-canvas {
-  border: 5px solid black;
+.screen {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+}
+
+.left-bar {
+  width: 200px;
+  border: 1px solid black;
+}
+
+.board {
+  max-width: 100%;
+  border: 1px solid black;
+}
+
+.controls {
+  width: 200px;
+  border: 1px solid black;
 }
