@@ -10,10 +10,8 @@ In the game, players will be able to:
 - [ ] Press the arrow keys which correspond to the four gameplay controls (up, down, left, right)
 
 Sidebar options:
-- [ ] Choose a starting difficulty.
-- [ ] Start, pause, and reset the game.
-- [ ] Modify bomb frequency (arrows that when pressed penalize the player)
-- [ ] Modify arrow speed / acceleration
+- [ ] Choose a starting difficulty with different arrow speeds.
+- [ ] Reset the game.
 - [ ] Mute music
 
 This project will also include:
@@ -26,7 +24,7 @@ This will be a single-page app with a gameplay screen and two sidebars.
 
 The main gameplay screen will have the outline of arrows at the top with a board of incoming arrows that scrolls continuously upwards.
 
-On the right is a sidebar that will have buttons at the top to start, pause, and reset the game depending on the current context. Below will be select inputs (sliders if time permits) to modify current gameplay such as bomb frequency and arrow speed. Furthest down will be a dropdown of starting difficulties to choose from and an audio mute button.
+On the right is a sidebar that will have buttons at the top to start, pause, and reset the game depending on the current context. Below will be a selection of starting difficulties to choose from and an audio mute button.
 
 On the left is a score that increments upon successful presses and a life bar.
 
@@ -39,8 +37,8 @@ This project will use the following technologies:
 * HTML5 Canvas and `easel.js` for DOM manipulation and rendering
 
 The following scripts will be specific to the game itself:
-`board.js`: This will handle the random creation of arrows/bombs with `easel.js`, store them in an array, and render them to the DOM. It will make calls to the audio element for music playback based on game state (pause/play/mute). It will also keep an instance of the life status and score.
-`arrow.js`: This will have an identity as either an arrow or bomb and a direction assignment + sprite.
+`board.js`: This will handle the random creation of arrows with `easel.js`, store them in an array, and render them to the DOM. It will make calls to the audio element for music playback based on game state (pause/play/mute). It will also keep an instance of the life status and score.
+`arrow.js`: This will have a direction assignment + sprite.
 `logic.js`: This will handle the scoring logic based on the timing of the arrows. It will be responsible for adding points to the overall score when an arrow gets destroyed.
 
 ### Implementation Timeline
