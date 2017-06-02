@@ -76,8 +76,20 @@ h1 {
   flex-direction: column;
 }
 
+.difficulty div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .difficulty h2 {
   color: white;
+  text-align: center;
+}
+
+.difficulty img {
+  height: 40px;
+  width: 40px;
 }
 
 .difficulty button {
@@ -87,6 +99,7 @@ h1 {
   margin: 5px 10px;
   font-family: 'Orbitron', sans-serif;
   font-size: 15px;
+  width: 120px;
 }
 
 .difficulty button:hover {
