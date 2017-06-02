@@ -2,7 +2,7 @@
   <head>
     <title>Endless Revolution</title>
     <link href="https://fonts.googleapis.com/css?family=Orbitron|Russo+One" rel="stylesheet">
-    <link rel="icon" href="assets/images/right.png">
+    <link rel="icon" href="assets/images/rh_right.png">
     <link rel="stylesheet" type="text/css" href="assets/css/endless.css">
     <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
     <script type="application/javascript" src="./lib/bundle.js"></script>
@@ -10,7 +10,7 @@
   <body>
     <section class="screen">
       <div class="board">
-        <canvas id="canvas" height="720" width="600"></canvas>
+        <canvas id="canvas" height="720" width="720"></canvas>
       </div>
 
       <div class="controls">
@@ -19,7 +19,7 @@
         <div class="stats">
           <div class="life">
             <h2>Life</h2>
-            <p id="life">50</p>
+            <p id="life">100</p>
           </div>
           <div class="scoreboard">
             <h2>Score</h2>
@@ -36,7 +36,10 @@
 
         <button id="mute" class="mute"><img src="./assets/images/mute.png"/></button>
 
-        <img id="instructions" src="./assets/images/instructions_left.png"/>
+        <div class="instructions">
+          <img id="leftKeys" src="./assets/images/left_instructions.png"/>
+          <img id="rightKeys" src="./assets/images/right_instructions.png"/>
+        </div>
 
         <div class="links">
           <a href="https://github.com/garyeh/endless-revolution" target="_blank"><img src="./assets/images/github.png"/></a>
