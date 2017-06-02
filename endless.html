@@ -10,25 +10,38 @@
   <body>
     <section class="screen">
       <div class="board">
-        <canvas id="canvas" height="700" width="600"></canvas>
+        <canvas id="canvas" height="720" width="600"></canvas>
       </div>
 
       <div class="controls">
-        <div class="scoreboard">
-          <h2>Score</h2>
-          <p id="score">0</p>
+        <h1>Endless Revolution</h1>
+
+        <div class="stats">
+          <div class="life">
+            <h2>Life</h2>
+            <p id="life">50</p>
+          </div>
+          <div class="scoreboard">
+            <h2>Score</h2>
+            <p id="score">0</p>
+          </div>
         </div>
-        <div class="life">
-          <h2>Life</h2>
-          <p id="life">50</p>
-        </div>
+
         <div class="difficulty">
           <h2>Choose Level</h2>
           <button type="button" id="light">Light</button>
           <button type="button" id="standard">Standard</button>
           <button type="button" id="heavy">Heavy</button>
         </div>
-        <button id="mute" class="mute"><img src="./assets/images/mute.png"></img></button>
+
+        <button id="mute" class="mute"><img src="./assets/images/mute.png"/></button>
+
+        <img id="instructions" src="./assets/images/instructions_left.png"/>
+
+        <div class="links">
+          <a href=""><img src="./assets/images/github.png"/></a>
+          <a href=""><img src="./assets/images/linkedin.png"/></a>
+        </div>
       </div>
     </div>
   </body>

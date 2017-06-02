@@ -14,24 +14,41 @@ body, section, div, span, p, h1, h2, canvas {
   justify-content: center;
 }
 
+h1 {
+  color: white;
+  font-size: 45px;
+  text-align: center;
+}
+
 .scoreboard, .life {
-  margin: 10px;
   border: 5px solid white;
   border-radius: 4px;
   color: white;
   text-align: center;
-  width: 200px;
+  margin: 10px 5px;
+}
+
+.life {
+  width: 100px;
+}
+
+.scoreboard {
+  width: 175px;
 }
 
 .scoreboard h2, .life h2 {
-  padding: 10px;
+  padding: 8px;
+  font-size: 20px;
 }
 
+.stats {
+  display: flex;
+}
 
 #score, #life {
   background-color: black;
-  font-size: 20px;
-  padding: 10px 0;
+  font-size: 25px;
+  padding: 5px;
 }
 
 #life {
@@ -102,7 +119,7 @@ body, section, div, span, p, h1, h2, canvas {
 
 #mute {
   border: none;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 #mute, #mute img {
@@ -114,4 +131,21 @@ body, section, div, span, p, h1, h2, canvas {
 #mute:hover {
   cursor: pointer;
   transform: translateY(1px);
+}
+
+#instructions {
+  margin-top: 15px;
+  width: 210px;
+  height: 140px;
+}
+
+.links {
+  padding: 10px;
+  margin-top: 8px;
+}
+
+.links img {
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
 }
