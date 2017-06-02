@@ -6,6 +6,7 @@
 
 ![screenshot](docs/screenshot.png)
 [live]: https://garyeh.github.io/endless-revolution/endless.html
+![screenshot](docs/screenshot.png)
 
 ### Instructions
 
