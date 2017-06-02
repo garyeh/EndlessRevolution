@@ -1,25 +1,34 @@
 <html>
   <head>
     <title>Endless Revolution</title>
-    <link rel="icon" href="assets/images/right.gif">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Russo+One" rel="stylesheet">
+    <link rel="icon" href="assets/images/right.png">
     <link rel="stylesheet" type="text/css" href="assets/css/endless.css">
     <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
     <script type="application/javascript" src="./lib/bundle.js"></script>
   </head>
   <body>
-    <audio id="song" autoplay loop src="assets/songs/paranoia.mp3"></audio>
-    <div class="screen">
-      <div class="left-bar">
-        <span>Scoreboard</span>
-        <span>Lifebar</span>
-      </div>
-
+    <section class="screen">
       <div class="board">
-        <canvas id="canvas" height="700" width="500"></canvas>
+        <canvas id="canvas" height="700" width="600"></canvas>
       </div>
 
       <div class="controls">
-        <span>Mute</span>
+        <div class="scoreboard">
+          <h2>Score</h2>
+          <p id="score">0</p>
+        </div>
+        <div class="life">
+          <h2>Life</h2>
+          <p id="life">50</p>
+        </div>
+        <div class="difficulty">
+          <h2>Choose Level</h2>
+          <button type="button" id="light">Light</button>
+          <button type="button" id="standard">Standard</button>
+          <button type="button" id="heavy">Heavy</button>
+        </div>
+        <button id="mute" class="mute"><img src="./assets/images/mute.png"></img></button>
       </div>
     </div>
   </body>

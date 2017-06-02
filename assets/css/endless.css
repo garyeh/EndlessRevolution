@@ -1,5 +1,11 @@
-body {
+body, section, div, span, p, h1, h2, canvas {
   margin: 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#canvas {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
 }
 
 .screen {
@@ -8,9 +14,28 @@ body {
   justify-content: center;
 }
 
-.left-bar {
+.scoreboard, .life {
+  margin: 10px;
+  border: 5px solid white;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
   width: 200px;
-  border: 1px solid black;
+}
+
+.scoreboard h2, .life h2 {
+  padding: 10px;
+}
+
+
+#score, #life {
+  background-color: black;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+#life {
+  background-color: green;
 }
 
 .board {
@@ -19,6 +44,74 @@ body {
 }
 
 .controls {
-  width: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
   border: 1px solid black;
+  background-color: #800000;
+}
+
+.difficulty {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.difficulty h2 {
+  color: white;
+}
+
+.difficulty button {
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 10px 10px;
+  margin: 5px 10px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+}
+
+.difficulty button:hover {
+  cursor: pointer;
+}
+
+#light {
+  background-color: #ffff80;
+}
+
+#light:hover {
+  box-shadow: 1px 1px 1px #ffff80;
+}
+
+#standard {
+  background-color: #ff80ff;
+}
+
+#standard:hover {
+  box-shadow: 1px 1px 1px #ff80ff;
+}
+
+#heavy {
+  background-color: #80ff80;
+}
+
+#heavy:hover {
+  box-shadow: 1px 1px 1px #80ff80;
+}
+
+#mute {
+  border: none;
+  margin: 10px 0;
+}
+
+#mute, #mute img {
+  width: 60px;
+  height: 60px;
+  background-color: #800000;
+}
+
+#mute:hover {
+  cursor: pointer;
+  transform: translateY(1px);
 }

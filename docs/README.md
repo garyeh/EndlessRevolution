@@ -52,17 +52,17 @@ Goals:
 - [ ] Be able to playback audio
 - [ ] Learn `easel.js` and be able to render an arrow
 
-**Day 2**: Continue learning `easel.js`. Create the arrow/bomb object to be constructed by the board and be able to render them. Render the structure of the entire screen (main board and sidebars).  Implement random arrow generation/destruction and movement.
+**Day 2**: Continue learning `easel.js`. Create the arrow object to be constructed by the board and be able to render them. Render the structure of the entire screen (main board and sidebars).  Implement random arrow generation/destruction and movement.
 
 Goals:
 - [ ] Render the entire skeleton with 3 sections (board and 2 sidebars)
 - [ ] Fill the board with arrows moving upwards, randomly created at the bottom and destroyed at the top.
 
-**Day 3**: Add modifications for board scrolling. Set win/lose conditions for the lifebar. Implement the game input controls.
+**Day 3**: Add acceleration for board scrolling. Set win/lose conditions for the lifebar. Implement the game input controls.
 
 Goals:
-- [ ] Fill in the sidebar with selectors for mods and implement their functionality.
-- [ ] Add user input controls (up, down, left, right) and game buttons (play, pause, restart)
+- [ ] Implement board acceleration functionality.
+- [ ] Add user input controls (up, down, left, right) and game buttons (restart)
 - [ ] Create the scoring line at the top of the board, destroy arrows that are within the scoring interval and count them as 'hits'.
 - [ ] Implement lifebar total which goes up / down from hits / misses respectively. Set game over message to an empty lifebar.
 
