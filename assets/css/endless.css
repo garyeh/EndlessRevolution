@@ -3,6 +3,10 @@ body, section, div, span, p, h1, h2, canvas {
   font-family: 'Orbitron', sans-serif;
 }
 
+body {
+  overflow: hidden;
+}
+
 #canvas {
   background-image: url("../images/background.jpg");
   background-size: cover;
