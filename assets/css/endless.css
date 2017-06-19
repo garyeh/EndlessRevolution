@@ -3,6 +3,10 @@ body, section, div, span, p, h1, h2, canvas {
   font-family: 'Orbitron', sans-serif;
 }
 
+body {
+  background-color: black;
+}
+
 #canvas {
   background-image: url("../images/background.jpg");
   background-size: cover;
@@ -10,8 +14,11 @@ body, section, div, span, p, h1, h2, canvas {
 
 .screen {
   display: flex;
-  flex-direction: row nowrap;
+  flex-direction: row;
   justify-content: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 h1 {
@@ -166,4 +173,22 @@ h1 {
   width: 60px;
   height: 60px;
   margin: 0 15px;
+}
+
+#instructionModal {
+  display: flex;
+  background-color: white;
+  position: absolute;
+  top: 200px;
+  width: 700px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0;
+}
+
+#instructionModal.visible {
+  z-index: 1;
+  opacity: 1;
 }
