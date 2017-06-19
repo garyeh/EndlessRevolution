@@ -22,15 +22,14 @@
   </head>
   <body>
     <section id="screen">
-      <div id="instructionModal" class="visible">
-        <img id="instructionImage" src="./assets/images/instructions.png" />
-        <div>
-          <button type="button"
-          onClick="board.closeModal()">Close</button>
-        </div>
-      </div>
-
       <div id="board">
+        <div id="instructionModal" class="visible">
+          <img id="instructionImage" src="./assets/images/instructions.png" />
+          <div>
+            <button type="button"
+            onClick="board.closeModal()">Close</button>
+          </div>
+        </div>
         <canvas id="canvas" height="720" width="720"></canvas>
       </div>
 
