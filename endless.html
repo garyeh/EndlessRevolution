@@ -23,11 +23,14 @@
   <body>
     <section id="screen">
       <div id="instructionModal" class="visible">
-        <span>
-          <img id="leftKeys" src="./assets/images/left_instructions.png" />
-          <img id="rightKeys" src="./assets/images/right_instructions.png" />
-        <span>
-        <button onClick="board.closeModal()">Lets go!</button>
+        <img id="instructionImage" src="./assets/images/instructions.png" />
+        <button type="button"
+        onClick="board.closeModal()" id="light">Light</button>
+        <button type="button"
+        onClick="board.closeModal()" id="standard">Standard</button>
+        <button type="button" onClick="board.closeModal()" id="heavy">Heavy</button>
+        <button type="button"
+        onClick="board.closeModal()">Close</button>
       </div>
 
       <div id="board">

@@ -185,9 +185,10 @@ h1 {
 
 #instructionModal {
   display: flex;
+  flex-direction: column;
   background-color: black;
   position: absolute;
-  top: 200px;
+  top: 70px;
   width: 700px;
   height: auto;
   margin: 0 auto;
@@ -197,11 +198,12 @@ h1 {
 
 #instructionModal button {
   display: block;
-  margin: 20px auto;
+  margin: 5px auto;
   font-family: 'Orbitron', sans-serif;
   font-size: 20px;
   border: 1px solid white;
   border-radius: 4px;
+  width: 200px;
   background-color: #ffff80;
   padding: 15px 20px;
 }
@@ -216,13 +218,7 @@ h1 {
   opacity: 1;
 }
 
-#leftKeys, #rightKeys {
-  width: 200px;
-  height: 130px;
-  margin: 20px 20px 0 20px;
-}
-
-#instructionModal span {
-  margin: 0 auto;
-  color: white;
+#instructionImage {
+  width: 700px;
+  height: 300px;
 }
