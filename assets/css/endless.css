@@ -79,7 +79,7 @@ h1 {
 }
 
 .difficulty {
-  margin: 10px;
+  margin: 5px;
   display: flex;
   flex-direction: column;
 }
@@ -93,6 +93,7 @@ h1 {
 .difficulty h2 {
   color: white;
   text-align: center;
+  margin: 10px;
 }
 
 .difficulty img {
@@ -140,13 +141,14 @@ h1 {
 
 #mute {
   border: none;
-  margin: 5px 0;
+  margin: 20px 0 5px 0;
 }
 
 #mute, #mute img {
   width: 60px;
   height: 60px;
   background-color: #800000;
+  outline: none;
 }
 
 #mute:hover {
@@ -157,7 +159,7 @@ h1 {
 .instructions {
   display: flex;
   font-weight: 900;
-  margin-top: 15px;
+  margin-top: 10px;
   color: white;
 }
 
@@ -165,6 +167,7 @@ h1 {
   border: none;
   font-size: 40px;
   font-family: 'Orbitron', sans-serif;
+  margin: 20px 0;
 }
 
 .instructions:hover {
