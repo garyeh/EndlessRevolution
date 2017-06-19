@@ -10,10 +10,8 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-100350356-1', 'auto');
       ga('send', 'pageview');
-
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -22,15 +20,14 @@
   </head>
   <body>
     <section id="screen">
-      <div id="instructionModal" class="visible">
-        <span>
-          <img id="leftKeys" src="./assets/images/left_instructions.png" />
-          <img id="rightKeys" src="./assets/images/right_instructions.png" />
-        <span>
-        <button onClick="board.closeModal()">Lets go!</button>
-      </div>
-
       <div id="board">
+        <div id="instructionModal" class="visible">
+          <img id="instructionImage" src="./assets/images/instructions.png" />
+          <div>
+            <button type="button"
+            onClick="board.closeModal()">Close</button>
+          </div>
+        </div>
         <canvas id="canvas" height="720" width="720"></canvas>
       </div>
 
@@ -51,16 +48,19 @@
         <div class="difficulty">
           <h2>Choose Level</h2>
           <div>
-            <button type="button" id="light">Light</button>
+            <button type="button"
+            onClick="board.closeModal()" id="light">Light</button>
             <img src="./assets/images/right_hand.png" />
           </div>
           <div>
-            <button type="button" id="standard">Standard</button>
+            <button type="button"
+            onClick="board.closeModal()" id="standard">Standard</button>
             <img src="./assets/images/right_hand.png" />
           </div>
           <div>
             <img src="./assets/images/left_hand.png" />
-            <button type="button" id="heavy">Heavy</button>
+            <button type="button"
+            onClick="board.closeModal()" id="heavy">Heavy</button>
             <img src="./assets/images/right_hand.png" />
           </div>
         </div>
