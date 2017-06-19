@@ -24,13 +24,10 @@
     <section id="screen">
       <div id="instructionModal" class="visible">
         <img id="instructionImage" src="./assets/images/instructions.png" />
-        <button type="button"
-        onClick="board.closeModal()" id="light">Light</button>
-        <button type="button"
-        onClick="board.closeModal()" id="standard">Standard</button>
-        <button type="button" onClick="board.closeModal()" id="heavy">Heavy</button>
-        <button type="button"
-        onClick="board.closeModal()">Close</button>
+        <div>
+          <button type="button"
+          onClick="board.closeModal()">Close</button>
+        </div>
       </div>
 
       <div id="board">
@@ -54,16 +51,19 @@
         <div class="difficulty">
           <h2>Choose Level</h2>
           <div>
-            <button type="button" id="light">Light</button>
+            <button type="button"
+            onClick="board.closeModal()" id="light">Light</button>
             <img src="./assets/images/right_hand.png" />
           </div>
           <div>
-            <button type="button" id="standard">Standard</button>
+            <button type="button"
+            onClick="board.closeModal()" id="standard">Standard</button>
             <img src="./assets/images/right_hand.png" />
           </div>
           <div>
             <img src="./assets/images/left_hand.png" />
-            <button type="button" id="heavy">Heavy</button>
+            <button type="button"
+            onClick="board.closeModal()" id="heavy">Heavy</button>
             <img src="./assets/images/right_hand.png" />
           </div>
         </div>
