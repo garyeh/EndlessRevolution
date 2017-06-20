@@ -142,18 +142,20 @@ h1 {
 #mute {
   border: none;
   margin: 20px 0 5px 0;
-}
-
-#mute, #mute img {
-  width: 60px;
-  height: 60px;
+  font-size: 80px;
+  color: white;
   background-color: #800000;
   outline: none;
+  width: 75px;
 }
 
 #mute:hover {
   cursor: pointer;
   transform: translateY(1px);
+}
+
+#muteIcon {
+  display: flex;
 }
 
 .instructions {
