@@ -17,8 +17,6 @@ body {
   flex-direction: row;
   justify-content: center;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 h1 {
@@ -173,7 +171,7 @@ h1 {
 }
 
 .instructions:hover {
-  color: black;
+  transform: translateY(1px);
   cursor: pointer;
 }
 
@@ -186,6 +184,10 @@ h1 {
   width: 60px;
   height: 60px;
   margin: 0 15px;
+}
+
+.links img:hover {
+  transform: translateY(1px);
 }
 
 #instructionModal {
@@ -204,7 +206,7 @@ h1 {
 }
 
 #instructionModal div {
-  height: 300px;
+  height: 660px;
   width: 720px;
   background-color: black;
 }
@@ -212,7 +214,7 @@ h1 {
 #instructionModal button {
   display: block;
   position: absolute;
-  bottom: 270px;
+  bottom: 120px;
   left: 258px;
   font-family: 'Orbitron', sans-serif;
   font-size: 20px;
@@ -235,7 +237,7 @@ h1 {
 
 #instructionImage {
   width: 720px;
-  height: 300px;
+  height: 500px;
   position: absolute;
-  top: 100px;
+  top: 30px;
 }
