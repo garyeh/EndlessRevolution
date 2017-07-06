@@ -17,6 +17,7 @@ body {
   flex-direction: row;
   justify-content: center;
   position: relative;
+  margin: 2% 0;
 }
 
 h1 {
